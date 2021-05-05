@@ -1,0 +1,57 @@
+{
+    "settings": {
+        "color": "red",
+        "font": "Times New Roman"
+    }
+
+    ,
+
+    "sections": [{
+            "type": "intro",
+            "intro_img": "media-cat-one/s1.png"
+        }
+
+        ,
+        {
+            "type": "text",
+            "title": "This is a text title",
+            "subtitle": "This is a subtitle",
+            "article": "This is article text"
+        }
+
+        ,
+        {
+
+            "type": "category",
+            "title": "Dresses",
+            "products": [{
+                    "title": "Floral dress",
+                    "price": "234dkk",
+                    "description": "kffjdkslfds",
+                    "img_url": "media-cat-one/s1.png"
+                }
+
+                ,
+                {
+                    "title": "Blue dress",
+                    "price": "234dkk", 
+                    "description": "kffjdkslfds",
+                    "img_url": "media-cat-one/s1.png"
+                }
+
+                ,
+                {
+                    "title": "Red dress",
+                    "price": "234dkk", 
+                    "description": "kffjdkslfds",
+                    "img_url": "media-cat-one/s1.png"
+                }
+
+
+            ]
+        }
+
+
+
+    ]
+}
