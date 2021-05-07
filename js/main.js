@@ -1,7 +1,7 @@
-// /* fetch data from catalogue-one JSON */
+// // /* fetch data from catalogue-one JSON */
 
 // function loadCatalogue() {
-//     fetch('catalogue-one.json')
+//     fetch('../json/catalogue-one.json')
 //         .then(function (response) {
 //             return response.json();
 //         })
@@ -17,17 +17,17 @@
 //     let htmlTemplate = "";
 //     for (let section of sections) {
 //         if (section.type === "intro") {
-//             htmlTemplate += `
-//             <div class="intro-img"> 
+//             htmlTemplate += /*html*/ `
+//             <div class="intro-img">
 //             <img src="${section.intro_img}">
-//             </div> 
+//         </div>
     
 //             `;
-            
+
 //         }
 
 //         if (section.type === "text") {
-//             htmlTemplate += `
+//             htmlTemplate += /*html*/ `
 //             <div class="text-element">
 //                 <h1>${section.title}</h1>
 //                 <h2>${section.subtitle}</h2>
@@ -36,24 +36,24 @@
 //             `;
 //         }
 
-        
+
 //         if (section.type === "category") {
 //             for (let product of section.products) {
 
 
-//         htmlTemplate += ` 
-//         <div class="product-container">
-//         <img src="${product.img_url}">
-//         <div class="product-details">
-//         <h1>${product.title}</h1>
-//         <h2>${product.price}</h2>
-//         <p>${product.description}<p>
+//                 htmlTemplate += /*html*/ ` 
+//         <div class="product-container" style="background-image:url('${product.img_url[0]}');">
+//             <div class="action-btn" style="background-color: ${settings.font};"></div>
+//             <div class="product-details">
+//                 <h1>${product.title}</h1>
+//                 <h2>${product.price}</h2>
+//                 <p>${product.description}<p>
+//             </div>
 //         </div>
-//         </div> 
 //         `;
+//             }
 //         }
-//     }
-        
+
 //     }
 //     document.querySelector("#catalogue").innerHTML = htmlTemplate;
 // }

@@ -5,33 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <title>Digital catalogue</title>
 </head>
 
 <body>
     <div id="catalogue" style="font-family:'Times New Roman', Times, serif">
-        <div class="intro-img">
-            <img src="media-cat-one/s1.png">
-        </div>
+        <!-- vymysli ako tam dat font -->
+
         <div class="text-element">
             <h1>Title</h1>
             <h2>Subtitle</h2>
             <h3>Article</h3>
         </div>
 
-        <div class="product-container" style="background-image:url('media-cat-one/s1.png');">
+        <div class="product-container" style="background-image:url('json/media-cat-one/s11.png');">
             <div class="action-btn" style="background-color: red;"></div>
             <div class="product-details">
-                <h1>Product title</h1>
-                <h2>43242dkk</h2>
-                <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsum mLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsum<p>
+                <h1>${product.title}</h1>
+                <h2>${product.price}</h2>
+                <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+                    ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem
+                    ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem
+                    ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsum mLorem ipsumLorem ipsumLorem ipsummLorem
+                    ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem ipsummLorem ipsumLorem ipsumLorem
+                    ipsummLorem ipsumLorem ipsumLorem ipsum<p>
+            </div>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="json/media-cat-one/s11.png"></div>
+
+
+        <div class="popup">
+            <div class="slider-wrapper"> 
+                   <img class="left"
+                            src="media/arrow-left.svg" />
+                   <img class="right"
+                            src="media/arrow-right.svg" />
+                   
+                <div class="images"></div>
+            </div>
+            <div class="popup-details-wrapper">
+                <button class="popup-close-btn">&Cross;</button>
+                <h1>Title </h1>
+                <h2>423dkk</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                    icdscs Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem orem ipsum
+                    Lorem ipsum Lorem</p>
+
+
+                <select name="dropdown" id="select">
+                    <option value="">Select</option>
+                    <option value="option">option</option>
+                </select>
+                <button class="popup-cart-btn" style="background-color: red;">Add to cart</button>
+                <a href="#">See product page &rarr;</a>
             </div>
         </div>
 
-    </div>
 
-    <script src="main.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
 
 </html>
