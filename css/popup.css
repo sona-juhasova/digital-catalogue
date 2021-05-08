@@ -1,0 +1,168 @@
+/* POP-UP */
+.popup-wrapper{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    z-index: 10;
+    background-color: #fff;
+}
+.popup {
+    display: flex; 
+    flex-direction: row;
+    width: 800px;
+    height: 500px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); 
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.images {
+    width: 450px;
+    height: 100%;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 10;
+}
+
+.right {
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin: auto auto 10px auto;
+}
+
+.left:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.right:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* The dots/bullets/indicators */
+.dots-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 2px solid #a3a3a3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #a3a3a3;
+  }
+
+  /* popup right side - details -----------------------------*/
+.popup-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    position: relative;
+    width: 100%;
+
+}
+
+.popup-details-wrapper h1 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.popup-details-wrapper h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.popup-details-wrapper p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 30px;
+
+    display: -webkit-box;
+    -webkit-line-clamp:8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.popup-details-wrapper select {
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    color: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    border-radius: 20px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.popup-details-wrapper select:hover{
+    cursor: pointer;
+}
+
+.popup-details-wrapper select option {
+    color: #000;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.popup-cart-btn{
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: auto auto 15px;
+}
+
+.popup-details-wrapper a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin: 0 auto;
+
+}
+
+.popup-close-btn {
+    border: none;
+    background: none;
+    color: #a3a3a3;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.popup-close-btn:hover {
+cursor: pointer; 
+}

@@ -35,7 +35,7 @@ leftArrow.addEventListener("click", function(){
   }
   count--;
   // currentImage.classList.add("fade-out"); 
-  currentImage.src = arr[count];
+ setSliderImage(count);
   
   // setTimeout(function(){ currentImage.classList.remove("fade-out"); }, 3000);
 });
@@ -44,14 +44,26 @@ rightArrow.addEventListener("click", function(){
   count++;
   if(count === len ){
     count = 0;
-  }
-  currentImage.src = arr[count];
+  } 
+
+setSliderImage(count);
+
 });
 
 
 // keep fading in and out by default
 
 
+function setSliderImage(count) {
+  currentImage.src = arr[count];
+
+  var i; 
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[count].className += " active";
+}
 
 
 
