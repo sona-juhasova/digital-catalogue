@@ -17,12 +17,7 @@ function appendCatalogue(sections) {
     let htmlTemplate = "";
     for (let section of sections) {
         if (section.type === "intro") {
-            htmlTemplate += /*html*/ `
-            <div class="intro-img">
-            <img src="${section.intro_img}">
-        </div>
-    
-            `;
+            htmlTemplate += introTemplate ;
 
         }
 

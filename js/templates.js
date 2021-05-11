@@ -1,32 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+let introTemplate = /*html*/ `
+<div class="intro-img">
+<img src="${section.intro_img}">
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/product-container.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/slideshow.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+`;
 
-    <title>Digital catalogue</title>
-</head>
+let textElementTemplate = /*html*/ `
+<div class="text-element">
+    <h1>${section.title}</h1>
+    <h2>${section.subtitle}</h2>
+    <h3>${section.article}</h3>
+</div>
+`;
 
-<body>
-    <div id="catalogue" style="font-family:'Times New Roman', Times, serif">
-        <!-- vymysli ako tam dat font -->
-
-        <div class="text-element">
-            <h1>Title</h1>
-            <h2>Subtitle</h2>
-            <h3>Article</h3>
-        </div>
-
-        <!-- single product -->
-        <div class="product-container" style="background-image:url('json/media-cat-one/s11.png');">
+let singleProductTemplate = /*html*/ `
+<div class="product-container" style="background-image:url('json/media-cat-one/s11.png');">
             <div class="action-btn" style="background-color: red;" onclick="openPopup(this)"></div>
             <div class="product-details">
                 <h1>${product.title}</h1>
@@ -67,16 +55,14 @@
                 </div>
             </div>
         </div>
+        `;
 
+let parallaxTemplate = /*html*/ `
+<div class="parallax-window" data-parallax="scroll" data-image-src="json/media-cat-one/s11.png"></div>
+        `;
 
-
-
-        <!-- parallax -->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="json/media-cat-one/s11.png"></div>
-
-        <!-- Product slideshow -->
-
-        <div class="container">
+let slideshowTemplate = /*html*/ `
+<div class="container">
             <div class="mySlides">
                 <div class="product-container-slideshow" style="background-image:url('json/media-cat-one/s1.png');">
                     <div class="action-btn" style="background-color: red;"></div>
@@ -133,15 +119,6 @@
 
             </div>
         </div>
+        `;
 
 
-
-
-
-        <script src="js/main.js"></script>
-        <script src="js/slider.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/slideshow.js"></script>
-</body>
-
-</html>

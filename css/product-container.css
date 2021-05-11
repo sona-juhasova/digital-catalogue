@@ -7,8 +7,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    position: relative;
-    border: 1px solid #fff;
+    position: relative; 
 
 }
 
