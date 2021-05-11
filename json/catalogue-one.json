@@ -8,7 +8,7 @@
 
     "sections": [{
             "type": "intro",
-            "intro_img": "media-cat-one/t1a.jpeg"
+            "intro_img": "json/media-cat-one/t1a.jpeg"
         }
 
         ,
@@ -28,7 +28,7 @@
                     "title": "Rade O-SS Tee",
                     "price": "499",
                     "description": "This cool tee will upgrade every outfit. It’s crafted in soft structured cotton-blend in a relaxed shape. We added a chest pocket with orange tape details, just to make it pop. Wear yours with cargo pants or a denim skirt.",
-                    "img_url": ["media-cat-one/t1a.jpeg", "media-cat-one/t1b.webp", "media-cat-one/t1c.webp"],
+                    "img_url": ["json/media-cat-one/t1a.jpeg", "json/media-cat-one/t1b.webp", "json/media-cat-one/t1c.webp"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 }
 
@@ -37,7 +37,7 @@
                     "title": "Essie O-SS Tee",
                     "price": "399",
                     "description": "We transformed the classic tee silhouette with this tee. Designed in a relaxed fit with elasticated sleeves and slightly puffed shoulders. Decorated with LIVE-LOVE-LAUGH lettering at front with shiny stones. Balance the feminine shape by wearing it with casual cargo pants and ankle boots.",
-                    "img_url": ["media-cat-one/t2a.jpeg", "media-cat-one/t2b.jpeg", "media-cat-one/t2c.png"],
+                    "img_url": ["json/media-cat-one/t2a.jpeg", "json/media-cat-one/t2b.jpeg", "json/media-cat-one/t2c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 }
 
@@ -46,126 +46,126 @@
                     "title": "Marilyn V-SS Sweat Tee",
                     "price": "399",
                     "description": "This tee has a sporty look to it. It’s made in soft sweatshirt fabric, designed with a flattering V-neck and decorated with colourful trims. We added a chest pocket with PASSION LOVE HEART lettering. We like it styles with jeans or cargo pants for a laid-back casual look.",
-                    "img_url": ["media-cat-one/t3a.jpeg", "media-cat-one/t3b.png", "media-cat-one/t3c.png"],
+                    "img_url": ["json/media-cat-one/t3a.jpeg", "json/media-cat-one/t3b.png", "json/media-cat-one/t3c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Ripley O-SS Tee",
                     "price": "599",
                     "description": "If we can only choose one tee, we would pick this one! The soft modal fabric feels so smooth against the skin and makes it fall effortlessly. It’s designed in a loose silhouette with drop shoulders and knitted trim at neckline. Style yours with denim jeans or sophisticated tailoring at the office. Don’t forget to pair it with a smile.",
-                    "img_url": ["media-cat-one/t4a.jpeg", "media-cat-one/t4b.png", "media-cat-one/t4c.png"],
+                    "img_url": ["json/media-cat-one/t4a.jpeg", "json/media-cat-one/t4b.png", "json/media-cat-one/t4c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Savina SS Tee",
                     "price": "499",
                     "description": "Looking for a flattering silhouette that will make you shine? This beautiful tee is cut in a loose silhouette from soft ripped modal. The neckline has a flattering waterfall effect that fall effortlessly. Complete the look with classic tailoring or with ecru-coloured pants and light jacket.",
-                    "img_url": ["media-cat-one/t5a.jpg", "media-cat-one/t5b.jpg", "media-cat-one/t5c.png"],
+                    "img_url": ["json/media-cat-one/t5a.jpg", "json/media-cat-one/t5b.jpg", "json/media-cat-one/t5c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Marple O-SS Tee",
                     "price": "399",
                     "description": "A statement tee is such a cool way to elevate an outfit. The slim silhouette is decorated with gold foil lettering at front, which looks great on again the ecru-coloured slub cotton. This looks so cool with tailoring to add a bit of glam.",
-                    "img_url": ["media-cat-one/t6a.jpeg", "media-cat-one/t6b.png", "media-cat-one/t6c.png"],
+                    "img_url": ["json/media-cat-one/t6a.jpeg", "json/media-cat-one/t6b.png", "json/media-cat-one/t6c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Arden Organic V-neck Tee",
                     "price": "299",
                     "description": "This tee is perfect for styling with everything from tailoring to casual denim. Crafted from organic cotton for a breathable and soft feel. The slim fit silhouette and V-neck is so flattering, making you look your best while still feeling comfortable.",
-                    "img_url": ["media-cat-one/t7a.jpeg", "media-cat-one/t7b.png", "media-cat-one/t7c.png"],
+                    "img_url": ["json/media-cat-one/t7a.jpeg", "json/media-cat-one/t7b.png", "json/media-cat-one/t7c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Royal O-SS Tee",
                     "price": "499",
                     "description": "There is nothing like a soft cotton tee with a sparkling twist. Designed in slim fit in sustainably sourced slub cotton. Detailed with gorgeous MOS MOSH logo at front with stitching and stones. Use yours with soft tailoring or tucked into your favorite jeans.",
-                    "img_url": ["media-cat-one/t8a.jpeg", "media-cat-one/t8b.png", "media-cat-one/t8c.png"],
+                    "img_url": ["json/media-cat-one/t8a.jpeg", "json/media-cat-one/t8b.png", "json/media-cat-one/t8c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Alba SS Tee",
                     "price": "599",
                     "description": "This super lightweight modal-blend tee drapes so effortlessly in a slightly relaxed silhouette. We added a pop of glam with a glittery MOS MOSH logo for you to use it as a shimmery piece with sleek tailoring for the office or simply with cargo pants for a more relaxed look.",
-                    "img_url": ["media-cat-one/t9a.jpeg", "media-cat-one/t9b.png", "media-cat-one/t9c.png"],
+                    "img_url": ["json/media-cat-one/t9a.jpeg", "json/media-cat-one/t9b.png", "json/media-cat-one/t9c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Maya V-neck Tee",
                     "price": "399",
                     "description": "You can always count on a classic tee to make you look good. This soft cotton-blend tee will do that for you. Slightly loose fit and V-neck, detailed with chest pocket. This goes with anything!",
-                    "img_url": ["media-cat-one/t10a.jpeg", "media-cat-one/t10b.png", "media-cat-one/t10c.png"],
+                    "img_url": ["json/media-cat-one/t10a.jpeg", "json/media-cat-one/t10b.png", "json/media-cat-one/t10c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Leah O-SS Tee",
                     "price": "499",
                     "description": "Showcase your love for a brand by wearing a logo tee. We cut this in a regular fit from soft cotton decorated with MOS MOSH lettering in shimmery stones. Tuck into your favorite pair of jeans and style with your favorite lipstick.",
-                    "img_url": ["media-cat-one/t11a.jpeg", "media-cat-one/t11b.png", "media-cat-one/t11c.png"],
+                    "img_url": ["json/media-cat-one/t11a.jpeg", "json/media-cat-one/t11b.png", "json/media-cat-one/t11c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Arden Organic O-neck Tee",
                     "price": "299",
                     "description": "Your go-to tee for every occasion. Crafted from organic cotton, for a breathable and soft feel. This slim fit tee will match every outfit, from tailoring, skirts and jeans.",
-                    "img_url": ["media-cat-one/t12a.jpg", "media-cat-one/t12b.png", "media-cat-one/t12c.png"],
+                    "img_url": ["json/media-cat-one/t12a.jpg", "json/media-cat-one/t12b.png", "json/media-cat-one/t12c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Bounce V-SS Tee",
                     "price": "499",
                     "description": "One of this season’s hottest trends are colour blocking! We love this loose tee with colour block design at front. The V-neck makes it extra flattering and the raw edges at sleeves and hem makes it very casual. This goes with anything from cargo pants to denim jeans.",
-                    "img_url": ["media-cat-one/t13a.jpeg", "media-cat-one/t13b.jpeg", "media-cat-one/t13c.png"],
+                    "img_url": ["json/media-cat-one/t13a.jpeg", "json/media-cat-one/t13b.jpeg", "json/media-cat-one/t13c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Mavis O-SS Tee",
                     "price": "399",
                     "description": "A logo tee is such a cool way to showcase your love for a brand. We love this soft tee crafted from cotton and linen-blend, designed in slim fit. Detailed with metallic MOS MOSH lettering at front. Pair with tailoring for a cool office look, switching to jeans and sneakers on the weekends.",
-                    "img_url": ["media-cat-one/t14a.jpeg", "media-cat-one/t14b.png", "media-cat-one/t14c.png"],
+                    "img_url": ["json/media-cat-one/t14a.jpeg", "json/media-cat-one/t14b.png", "json/media-cat-one/t14c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Scarlett O-Neck Stripe Tee",
                     "price": "399",
                     "description": "A cotton and linen tee is a summer essential. This is ideal for a casual weekend outfit or easy to pack in summer suitcase. We like the relaxed fit and stripe print and think it looks great with denim and sandals.",
-                    "img_url": ["media-cat-one/t15a.jpeg", "media-cat-one/t15b.png", "media-cat-one/t15c.png"],
+                    "img_url": ["json/media-cat-one/t15a.jpeg", "json/media-cat-one/t15b.png", "json/media-cat-one/t15c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Kay Tee",
                     "price": "399",
                     "description": "Add a sparkling shimmer to your outfit with this flattering lurex tee. Cut in a relaxed fit with a slightly loose silhouette and curved hem. Use it as a pop of glam to your tailoring or style with jeans.",
-                    "img_url": ["media-cat-one/t16a.jpeg", "media-cat-one/t16b.png", "media-cat-one/t16c.png"],
+                    "img_url": ["json/media-cat-one/t16a.jpeg", "json/media-cat-one/t16b.png", "json/media-cat-one/t16c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Mex O-SS Tee",
                     "price": "399",
                     "description": "Add a statement to your outfit with this soft cotton, crafted from recycled cotton and organic cotton. The regular shape is finished with metallic YOYAGE foil lettering with cracked effect at front and contrast stitching at shoulder. Tuck into a denim skirt or wear with light blue denim.",
-                    "img_url": ["media-cat-one/t17a.jpeg", "media-cat-one/t17b.png", "media-cat-one/t17c.png"],
+                    "img_url": ["json/media-cat-one/t17a.jpeg", "json/media-cat-one/t17b.png", "json/media-cat-one/t17c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Troy Tee SS",
                     "price": "349",
                     "description": "You can always use a well fitted tee in your wardrobe. Cut in slim fit with a feminine placket detail in contrast fabric. We made this in a comfy cotton and linen-blend and added some cool roll up sleeves. You can wear this with anything, but we love it with jeans.",
-                    "img_url": ["media-cat-one/t18a.jpg", "media-cat-one/t18b.png", "media-cat-one/t18c.png"],
+                    "img_url": ["json/media-cat-one/t18a.jpg", "json/media-cat-one/t18b.png", "json/media-cat-one/t18c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Vee O-SS Tee",
                     "price": "499",
                     "description": "You can count on a logo tee to make you look cool. This super soft cotton tee is cut in slim fit and detailed with gold MOS MOSH logo and a fierce looking pearl beaded snake at front. It looks so cool with tailoring and flat leather brogues for the perfect office look.",
-                    "img_url": ["media-cat-one/t19a.jpeg", "media-cat-one/t19b.jpeg", "media-cat-one/t19c.png"],
+                    "img_url": ["json/media-cat-one/t19a.jpeg", "json/media-cat-one/t19b.jpeg", "json/media-cat-one/t19c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
                     "title": "Glory V-SS Tee",
                     "price": "349",
                     "description": "Add a feminine spin to your outfit with this cool tee in soft slub cotton. The silhouette is slightly loose, and it’s designed with drop shoulder and raw edges for an edgy twist. It’s decorated with heart and MOS MOSH embroidery at front as a cute detail. Pair with your favorite jeans.",
-                    "img_url": ["media-cat-one/t20a.jpeg", "media-cat-one/t20b.png", "media-cat-one/t20c.png"],
+                    "img_url": ["json/media-cat-one/t20a.jpeg", "json/media-cat-one/t20b.png", "json/media-cat-one/t20c.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 }
 
@@ -180,11 +180,11 @@
                     "title": "Rade O-SS Tee",
                     "price": "499",
                     "description": "This cool tee will upgrade every outfit. It’s crafted in soft structured cotton-blend in a relaxed shape. We added a chest pocket with orange tape details, just to make it pop. Wear yours with cargo pants or a denim skirt.",
-                    "img_url": ["media-cat-one/t1a.jpeg", "media-cat-one/t1b.webp", "media-cat-one/t1c.webp"],
+                    "img_url": ["json/media-cat-one/t1a.jpeg", "json/media-cat-one/t1b.webp", "json/media-cat-one/t1c.webp"],
                     "variants": ["XS", "S", "M", "L", "XL"]
-                }
+                }]
 
-                ,
+            }
 
 
 
