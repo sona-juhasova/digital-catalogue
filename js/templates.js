@@ -66,7 +66,7 @@ let singleProductTemplate =  function (product)
 let parallaxTemplate =  function (section)
 {
     return /*html*/ `
-<div class="parallax-window" data-parallax="scroll" data-image-src="json/media-cat-one/t1a.jpeg"></div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="${section.parallax_img}"></div>
         `;
 }
 let slideshowTemplate =  function (product1,product2,product3)

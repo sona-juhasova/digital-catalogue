@@ -1,9 +1,9 @@
 /* PRODUCT CONTAINER*/
 .product-container {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 20%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

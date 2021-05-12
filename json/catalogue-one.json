@@ -24,6 +24,7 @@
 
             "type": "category",
             "title": "Tops",
+            "parallax_img": "json/media-cat-one/t1a.jpeg",
             "products": [{
                     "title": "Rade O-SS Tee",
                     "price": "499",

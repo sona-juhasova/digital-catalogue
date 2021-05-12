@@ -36,6 +36,7 @@ function appendCatalogue(sections) {
 
     }
     document.querySelector("#catalogue").innerHTML = htmlTemplate;
+    $('[data-parallax="scroll"]').parallax(); 
 }
 
 function openPopup(target) {
