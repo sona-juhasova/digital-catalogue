@@ -1,23 +1,19 @@
 // code source:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n,container) {
+  showSlides(container.slideIndex+n,container);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n,container) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo"); 
+  var slideIndex = n;
+  var slides = container.getElementsByClassName("mySlides");
+  var dots = container.getElementsByClassName("demo"); 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+
+  container.slideIndex = slideIndex;
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }

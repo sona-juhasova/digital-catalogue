@@ -8,6 +8,29 @@ function loadCatalogue() {
         .then(function (json) {
             console.log(json);
             appendCatalogue(json.sections);
+            
+            $('[data-parallax="scroll"]').parallax(); 
+            $('.slider-container').each(function( index, sliderElement ) {
+                sliderElement.slideIndex = 1;
+                $('.demo',$(sliderElement)).each(function( index2, demoElement ) {
+                    demoElement.onclick = function(){
+                        showSlides(index2+1,sliderElement);
+                    }
+                });
+                $('.prev',$(sliderElement)).each(function( index2, prevElement ) {
+                    prevElement.onclick = function(){
+                        plusSlides(-1,sliderElement);
+                    }
+                });
+                $('.next',$(sliderElement)).each(function( index2, prevElement ) {
+                    prevElement.onclick = function(){
+                        plusSlides(1,sliderElement);
+                    }
+                });
+                showSlides(1,sliderElement);
+              });
+            
+            //showSlides(slideIndex);
         })
 }
 
@@ -36,7 +59,8 @@ function appendCatalogue(sections) {
 
     }
     document.querySelector("#catalogue").innerHTML = htmlTemplate;
-    $('[data-parallax="scroll"]').parallax(); 
+
+
 }
 
 function openPopup(target) {

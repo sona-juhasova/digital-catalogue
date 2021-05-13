@@ -1,5 +1,4 @@
 
-
 let introTemplate = function (section)
 {
     return /*html*/ `
@@ -72,7 +71,7 @@ let parallaxTemplate =  function (section)
 let slideshowTemplate =  function (product1,product2,product3)
 {
     return /*html*/ `
-<div class="container">
+<div class="container slider-container">
             <div class="mySlides">
                 <div class="product-container-slideshow" style="background-image:url('${product1.img_url[0]}');">
                     <div class="action-btn" style="background-color: red;"></div>
@@ -103,21 +102,21 @@ let slideshowTemplate =  function (product1,product2,product3)
                     </div>
                 </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">
+            <a class="prev" >
                 <img class="left" src="media/arrow-up.svg" />
             </a>
-            <a class="next" onclick="plusSlides(1)">
+            <a class="next" >
                 <img class="left" src="media/arrow-down.svg" />
             </a>
             <div class="row">
                 <div class="column">
-                    <img class="demo" src="${product1.img_url[0]}" onclick="currentSlide(1)">
+                    <img class="demo" src="${product1.img_url[0]}" />
                 </div>
                 <div class="column">
-                    <img class="demo" src="${product2.img_url[0]}" onclick="currentSlide(2)">
+                    <img class="demo" src="${product2.img_url[0]}" />
                 </div>
                 <div class="column">
-                    <img class="demo" src="${product3.img_url[0]}" onclick="currentSlide(3)">
+                    <img class="demo" src="${product3.img_url[0]}" />
                 </div>
             </div>
         </div>
@@ -132,16 +131,13 @@ let sectionLarge = function (section)
 {
     return /*html*/ `
     <h1 class="section-title" style="font-family:'Times New Roman', Times, serif">${section.title}</h1>
-
     <div class="section-container-large">
-
         <div class="section-item-slider">${slideshowTemplate(section.products[0],section.products[1],section.products[2])}</div>
-
+        
         <div class="section-item-small">${singleProductTemplate(section.products[3])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[4])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[5])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[6])}</div>
-
         <div class="group-of-five">
             <div>
                 <div class="section-item-small">${singleProductTemplate(section.products[7])}</div>
@@ -153,23 +149,19 @@ let sectionLarge = function (section)
                 <div class="section-item-small">${singleProductTemplate(section.products[11])}</div>
             </div>
         </div>
-
         <div class="section-item-small">${singleProductTemplate(section.products[12])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[13])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[14])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[15])}</div>
-
         <div class="section-item-parallax">${parallaxTemplate(section)}</div> 
         
         <div class="section-item-small">${singleProductTemplate(section.products[16])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[17])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[18])}</div>
         <div class="section-item-small">${singleProductTemplate(section.products[19])}</div>
-
     </div>
     
     
     `
 
 }
-
