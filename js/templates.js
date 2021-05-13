@@ -17,7 +17,24 @@ let textElementTemplate = function (section) {
 }
 
 // product templates
-
+let productOptionTemplate = function(options)
+{
+    var optionString = "";
+    for(var i=0;i<options.length;i++)
+    {
+        optionString += `<option value="${options[i]}">`+options[i]+`</option>`;
+    }
+    return optionString;
+}
+let sliderDotTemplate = function(img_url)
+{
+    var dotsString = "";
+    for(var i=0;i<img_url.length;i++)
+    {
+        dotsString += `<span class="dot" onclick="setSliderImage(${i})" data-imgUrl="${img_url[i]}"></span>`;
+    }
+    return dotsString;
+}
 let singleProductTemplate = function (product) {
     return /*html*/ `
 <div class="product-container" style="background-image:url('${product.img_url[0]}');">
@@ -35,10 +52,7 @@ let singleProductTemplate = function (product) {
                         <img class="right" src="media/arrow-right.svg" />
                         <div class="images"></div>
                         <div class="dots-wrapper" style="text-align:center">
-                            <span class="dot" onclick="setSliderImage(0)"></span>
-                            <span class="dot" onclick="setSliderImage(1)"></span>
-                            <span class="dot" onclick="setSliderImage(2)"></span>
-                            <span class="dot" onclick="setSliderImage(3)"></span>
+                            ${sliderDotTemplate(product.img_url)}
                         </div>
                     </div>
                     <div class="popup-details-wrapper">
@@ -48,7 +62,7 @@ let singleProductTemplate = function (product) {
                         <p>${product.description}</p>
                         <select name="dropdown" id="select">
                             <option value="">Select</option>
-                            <option value="option">${product.variant}</option>
+                            ${productOptionTemplate(product.variants)}
                         </select>
                         <button class="popup-cart-btn" style="background-color: red;">Add to cart</button>
                         <a href="#">See product page &rarr;</a>
@@ -58,6 +72,7 @@ let singleProductTemplate = function (product) {
         </div>
         `;
 }
+
 let parallaxTemplate = function (section) {
     return /*html*/ `
 <div class="parallax-window" data-parallax="scroll" data-image-src="${section.parallax_img}"></div>
@@ -124,7 +139,6 @@ let slideshowTemplate = function (product1, product2, product3) {
 let sectionSmall = function (section, settings) {
     return /*html*/ ` 
     <h1 class="section-title" style="${settings.font}">${section.title}</h1>
-
     <div class="section-container-small">
         <div class="group-of-four">
             <div>
@@ -137,9 +151,7 @@ let sectionSmall = function (section, settings) {
             </div>
         </div>
         <div class="section-item-big">${singleProductTemplate(section.products[4])}</div>
-
         <div class="section-item-slider">${slideshowTemplate(section.products[5],section.products[6],section.products[7])}</div>
-
     </div>
     
     
@@ -150,9 +162,7 @@ let sectionSmall = function (section, settings) {
 let sectionMedium = function (section, settings) {
     return /*html*/ `
     <h1 class="section-title" style="${settings.font}">${section.title}</h1>
-
     <div class="section-container-medium">
-
         <div class="group-of-three">
             <div>
                 <div class="section-item-small">${singleProductTemplate(section.products[0])}</div>
@@ -160,7 +170,6 @@ let sectionMedium = function (section, settings) {
             </div>
             <div class="section-item-big">${singleProductTemplate(section.products[2])}</div>
         </div>
-
         <div class="group-of-three">
             <div class="section-item-big">${singleProductTemplate(section.products[3])}</div>
             <div>
@@ -168,9 +177,7 @@ let sectionMedium = function (section, settings) {
                 <div class="section-item-small">${singleProductTemplate(section.products[5])}</div>
             </div>
         </div>
-
         <div class="section-item-parallax">${parallaxTemplate(section)}</div> 
-
         <div class="group-of-three">
             <div class="section-item-big">${singleProductTemplate(section.products[6])}</div>
             <div>
@@ -178,7 +185,6 @@ let sectionMedium = function (section, settings) {
                 <div class="section-item-small">${singleProductTemplate(section.products[8])}</div>
             </div>
         </div>
-
         <div class="group-of-three">
             <div>
                 <div class="section-item-small">${singleProductTemplate(section.products[9])}</div>

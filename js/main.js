@@ -8,28 +8,30 @@ function loadCatalogue() {
         .then(function (json) {
             console.log(json);
             appendCatalogue(json.sections, json.settings);
-            
-            $('[data-parallax="scroll"]').parallax(); 
-            $('.slider-container').each(function( index, sliderElement ) {
+
+            $('[data-parallax="scroll"]').parallax();
+            $('.slider-container').each(function (index, sliderElement) {
                 sliderElement.slideIndex = 1;
-                $('.demo',$(sliderElement)).each(function( index2, demoElement ) {
-                    demoElement.onclick = function(){
-                        showSlides(index2+1,sliderElement);
+                $('.demo', $(sliderElement)).each(function (index2, demoElement) {
+                    demoElement.onclick = function () {
+                        showSlides(index2 + 1, sliderElement);
                     }
                 });
-                $('.prev',$(sliderElement)).each(function( index2, prevElement ) {
-                    prevElement.onclick = function(){
-                        plusSlides(-1,sliderElement);
+                $('.prev', $(sliderElement)).each(function (index2, prevElement) {
+                    prevElement.onclick = function () {
+                        plusSlides(-1, sliderElement);
                     }
                 });
-                $('.next',$(sliderElement)).each(function( index2, prevElement ) {
-                    prevElement.onclick = function(){
-                        plusSlides(1,sliderElement);
+                $('.next', $(sliderElement)).each(function (index2, prevElement) {
+                    prevElement.onclick = function () {
+                        plusSlides(1, sliderElement);
                     }
                 });
-                showSlides(1,sliderElement);
-              });
-            
+                showSlides(1, sliderElement);
+            });
+            $('.popup-wrapper').each(function (index, popupElement) {
+                setPopupSlider(popupElement);
+            });
             //showSlides(slideIndex);
         })
 }
@@ -51,17 +53,17 @@ function appendCatalogue(sections, settings) {
 
         if (section.type === "category") {
             if (section.products.length == 8) {
- 
+
                 htmlTemplate += sectionSmall(section, settings);
 
             }
             if (section.products.length == 12) {
- 
+
                 htmlTemplate += sectionMedium(section, settings);
 
             }
             if (section.products.length == 20) {
- 
+
                 htmlTemplate += sectionLarge(section, settings);
 
             }
