@@ -7,7 +7,7 @@ function loadCatalogue() {
         })
         .then(function (json) {
             console.log(json);
-            appendCatalogue(json.sections);
+            appendCatalogue(json.sections, json.settings);
             
             $('[data-parallax="scroll"]').parallax(); 
             $('.slider-container').each(function( index, sliderElement ) {
@@ -36,23 +36,33 @@ function loadCatalogue() {
 
 /* append JSON data to the DOM */
 
-function appendCatalogue(sections) {
+function appendCatalogue(sections, settings) {
     let htmlTemplate = "";
     for (let section of sections) {
         if (section.type === "intro") {
-            htmlTemplate += introTemplate(section);
+            htmlTemplate += introTemplate(section, settings);
 
         }
 
         if (section.type === "text") {
-            htmlTemplate += textElementTemplate(section);
+            htmlTemplate += textElementTemplate(section, settings);
         }
 
 
         if (section.type === "category") {
+            if (section.products.length == 8) {
+ 
+                htmlTemplate += sectionSmall(section, settings);
+
+            }
+            if (section.products.length == 12) {
+ 
+                htmlTemplate += sectionMedium(section, settings);
+
+            }
             if (section.products.length == 20) {
  
-                htmlTemplate += sectionLarge(section);
+                htmlTemplate += sectionLarge(section, settings);
 
             }
         }

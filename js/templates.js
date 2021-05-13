@@ -1,6 +1,4 @@
-
-let introTemplate = function (section)
-{
+let introTemplate = function (section) {
     return /*html*/ `
 <div class="intro-img">
 <img src="${section.intro_img}">
@@ -8,8 +6,7 @@ let introTemplate = function (section)
 `;
 }
 
-let textElementTemplate =  function (section)
-{
+let textElementTemplate = function (section) {
     return /*html*/ `
 <div class="text-element">
     <h1>${section.title}</h1>
@@ -21,8 +18,7 @@ let textElementTemplate =  function (section)
 
 // product templates
 
-let singleProductTemplate =  function (product)
-{
+let singleProductTemplate = function (product) {
     return /*html*/ `
 <div class="product-container" style="background-image:url('${product.img_url[0]}');">
             <div class="action-btn" style="background-color: red;" onclick="openPopup(this)"></div>
@@ -62,14 +58,12 @@ let singleProductTemplate =  function (product)
         </div>
         `;
 }
-let parallaxTemplate =  function (section)
-{
+let parallaxTemplate = function (section) {
     return /*html*/ `
 <div class="parallax-window" data-parallax="scroll" data-image-src="${section.parallax_img}"></div>
         `;
 }
-let slideshowTemplate =  function (product1,product2,product3)
-{
+let slideshowTemplate = function (product1, product2, product3) {
     return /*html*/ `
 <div class="container slider-container">
             <div class="mySlides">
@@ -127,10 +121,81 @@ let slideshowTemplate =  function (product1,product2,product3)
 
 // section templates
 
-let sectionLarge = function (section)
-{
+let sectionSmall = function (section, settings) {
+    return /*html*/ ` 
+    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
+
+    <div class="section-container-small">
+        <div class="group-of-four">
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[0])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[1])}</div>
+            </div>
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[2])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[3])}</div>
+            </div>
+        </div>
+        <div class="section-item-big">${singleProductTemplate(section.products[4])}</div>
+
+        <div class="section-item-slider">${slideshowTemplate(section.products[5],section.products[6],section.products[7])}</div>
+
+    </div>
+    
+    
+    `
+
+}
+
+let sectionMedium = function (section, settings) {
     return /*html*/ `
-    <h1 class="section-title" style="font-family:'Times New Roman', Times, serif">${section.title}</h1>
+    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
+
+    <div class="section-container-medium">
+
+        <div class="group-of-three">
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[0])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[1])}</div>
+            </div>
+            <div class="section-item-big">${singleProductTemplate(section.products[2])}</div>
+        </div>
+
+        <div class="group-of-three">
+            <div class="section-item-big">${singleProductTemplate(section.products[3])}</div>
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[4])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[5])}</div>
+            </div>
+        </div>
+
+        <div class="section-item-parallax">${parallaxTemplate(section)}</div> 
+
+        <div class="group-of-three">
+            <div class="section-item-big">${singleProductTemplate(section.products[6])}</div>
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[7])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[8])}</div>
+            </div>
+        </div>
+
+        <div class="group-of-three">
+            <div>
+                <div class="section-item-small">${singleProductTemplate(section.products[9])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[10])}</div>
+            </div>
+            <div class="section-item-big">${singleProductTemplate(section.products[11])}</div>
+        </div>
+    </div>
+    
+    
+    `
+
+}
+
+let sectionLarge = function (section, settings) {
+    return /*html*/ `
+    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
     <div class="section-container-large">
         <div class="section-item-slider">${slideshowTemplate(section.products[0],section.products[1],section.products[2])}</div>
         
