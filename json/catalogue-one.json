@@ -9,18 +9,180 @@
 
     "sections": [{
             "type": "intro",
-            "intro_img": "json/media-cat-one/parallax4.webp"
+            "intro_img": "json/media-cat-one/intro-img.svg"
         }
 
         ,
+        
         {
             "type": "text",
-            "title": "This is a text title",
-            "subtitle": "This is a subtitle",
-            "article": "This is article text"
-        }
+            "title": "",
+            "subtitle": "Designed with heart, worn with passion, loved forever",
+            "article": ""
+        },
+        {
 
-        ,
+            "type": "category",
+            "title": "Dresses",
+            "parallax_img": "json/media-cat-one/parallax1.webp",
+            "products": [{
+                    "title": "Aslaug Shirt Dress",
+                    "price": "899",
+                    "description": "Get ready for summer with this modernized spin on a shirt dress. Crafted from crisp cotton in a loose fit, finished with belt to cinch in the waist. It has button closure, sharp collar and midi-sleeves. We added pockets because simply because we are pockets! This looks amazing with a summer tan and sandals at day, switching to heels and lip gloss at night.",
+                    "img_url": ["json/media-cat-one/d1a.jpeg", "json/media-cat-one/d1b.png", "json/media-cat-one/d1c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Malise Zebra Dress",
+                    "price": "1.199",
+                    "description": "This zebra print summer dress is easy to throw on. Cut in a comfortably relaxed shape that’s just perfect for casual days. It’s made from lightweight viscose crepe and designed with ruffle details at cuff, at front and at waist. Wear it with sandals on vacation and switch to heels for a night out.",
+                    "img_url": ["json/media-cat-one/d2a.jpeg", "json/media-cat-one/d2b.png", "json/media-cat-one/d2c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Brielle Linen Tunic",
+                    "price": "799",
+                    "description": "This is one of those styles that are simply made for hot summer days. Spun from airy linen in a slightly loose fit, designed with button closure, short sleeves and dipped hem in the back. Use it as a sundress to the beach or open as a cool jacket with denim shorts and a tank top.",
+                    "img_url": ["json/media-cat-one/d3a.jpeg", "json/media-cat-one/d3b.png", "json/media-cat-one/d3c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Rikas Costa Dress",
+                    "price": "1.299",
+                    "description": "This beautiful poppy print makes us ready for spring and flowers in bloom. The loose silhouette is highlighted with wide butterfly sleeves and drawstrings to highlight the waist. The length hits just above the knee, making it perfect for a spring garden party paired with heeled sandals.",
+                    "img_url": ["json/media-cat-one/d4a.jpeg", "json/media-cat-one/d4b.png", "json/media-cat-one/d4c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Rory Lolly Dress",
+                    "price": "1.499",
+                    "description": "Florals for spring is a no-brainer and we so excited over this beautiful retro flower print! The silhouette of the shirt dress is relaxed, it has button closure, sharp shirt collar and wide cuffs. Use the matching belt to highlight the narrowest pair of your silhouette. Complete the spring look with suede flats and don’t forget a pink lipstick.",
+                    "img_url": ["json/media-cat-one/d5a.jpeg", "json/media-cat-one/d5b.png", "json/media-cat-one/d5c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Tinka Chintz Dress",
+                    "price": "1.499",
+                    "description": "An effortless take on this season’s vacation wear is to incorporate paisley print to your wardrobe. We love how the relaxed fit and tiered hem floats so elegantly when you move. The feminine gathered neckline with ties can be done up or left loose. Style yours with flat loafers for a casual lunch or style it with high heels for a night out.",
+                    "img_url": ["json/media-cat-one/d6a.jpeg", "json/media-cat-one/d6b.png", "json/media-cat-one/d6c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Sierra Cole Dress",
+                    "price": "1.299",
+                    "description": "We are very inspired by utility this season. And this shirt dress in relaxed fit is a perfect combination of utility and feminine. It has multiple pockets at front, both functional and stylish and the puff sleeves add some femininity to the shape. Use the matching belt to cinch in your waist. Wear yours with suede boots.",
+                    "img_url": ["json/media-cat-one/d7a.jpeg", "json/media-cat-one/d7b.png", "json/media-cat-one/d7c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Meta Knit Dress",
+                    "price": "999",
+                    "description": "A knitted dress is such a fun style for the season, especially when it’s packed with plenty of glamorous glittery lurex. The knit is softly pleated, and it has a flattering a-shape. Finished with feminine short billowy sleeves. Try styling it with leather leggings for a raw but festive outfit, or simply on its own with tights and heeled boots.",
+                    "img_url": ["json/media-cat-one/d8a.jpeg", "json/media-cat-one/d8b.png", "json/media-cat-one/d8c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Kanela Thistle Dress",
+                    "price": "1.299",
+                    "description": "We are inspired by the beautiful shapes and colours of dried flowers this season. This maxi dress silhouette is a go-to for spring with the flattering V-neck and romantic puff sleeves. The smock at back draws in the waist naturally while the belt lets you highlight the waist even more. Wear with sandals for a casual day look, switching to heels for a night out with your favorite crowd.",
+                    "img_url": ["json/media-cat-one/d9a.webp", "json/media-cat-one/d9b.webp", "json/media-cat-one/d9c.webp"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Saku 3/4 Chintz Dress",
+                    "price": "1.299",
+                    "description": "This dress is made to flatter you in every way. The silhouette is feminine, yet relaxed, it has slightly puffed sleeves and tiered hem that falls effortlessly. Wear yours with sandals to a night out dancing, showing off the beautiful movement of the chintz paisley fabric.",
+                    "img_url": ["json/media-cat-one/d10a.webp", "json/media-cat-one/d10b.webp", "json/media-cat-one/d10c.webp"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Adine Mini Check Dress",
+                    "price": "999",
+                    "description": "This is one of those dresses that are easy to pick in the morning. The slightly A-shaped silhouette is crafted from soft lyocell with a subtle shine, that feels great on the skin. It has open collar placket and elasticated sleeves. Transform the silhouette with the matching belt or wear without for a laid-back tunic look. Wear sandals or sneakers at Saturday brunches.",
+                    "img_url": ["json/media-cat-one/d11a.jpeg", "json/media-cat-one/d11b.png", "json/media-cat-one/d11c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Selby Leo Dress",
+                    "price": "1.299",
+                    "description": "This cool leo print shirt dress pays an homage to the ‘70s. Cut to fit you silhouette and detailed visible front button closure and at cuffs. It has deep square pockets at each side. Use the matching belt to cinch in your waist. Style with ankle boots.",
+                    "img_url": ["json/media-cat-one/d12a.jpeg", "json/media-cat-one/d12b.png", "json/media-cat-one/d12c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                }
+            ]
+
+        },
+        {
+
+            "type": "category",
+            "title": "Blazers",
+            "products": [{
+                    "title": "Bena Lolly Blazer",
+                    "price": "1.499",
+                    "description": "Embrace the nostalgic feeling with this stunning floral blazer. It’s designed in a relaxed fit with single button closure, finished with light brown piping and front pockets. Wear yours with a silk top and light blue jeans. Don’t forget to add your favorite spring lip gloss!",
+                    "img_url": ["json/media-cat-one/b1a.jpeg", "json/media-cat-one/b1b.png", "json/media-cat-one/b1c.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Tropez Linen Blazer",
+                    "price": "1.299",
+                    "description": "Upgrade your outfit with this luxurious linen-blend blazer, cut in a flattering fitted silhouette. The collarless design makes it look so sophisticated, while the big bellow pockets and matching belt gives it a utility inspired feel. We like it paired with denim or layered over a dress for an evening out.",
+                    "img_url": ["json/media-cat-one/b2a.jpeg", "json/media-cat-one/b2b.png", "json/media-cat-one/b2c.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+
+                },
+                {
+                    "title": "Jane Brink Blazer",
+                    "price": "1.699",
+                    "description": "Upgrade your spring outfit with this blazer in a relaxed fit. We love the structured fabric, reminding us of crisp linen. It’s designed with single button fastening, front pockets and stunning chintz paisley print lining. Pair with short and a logo tee to portray extra coolness.",
+                    "img_url": ["json/media-cat-one/b3a.jpeg", "json/media-cat-one/b3b.png", "json/media-cat-one/b3c.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+
+                },
+                {
+                    "title": "Blake Ria Blazer",
+                    "price": "1.599",
+                    "description": "You can never go wrong with a tailored blazer and this slim fit is a winner! Designed with single button closure to draw in the waist, lightly padded shoulders and buttoned cuffs. Style with neutral-coloured tones for a fresh spring look.",
+                    "img_url": ["json/media-cat-one/b4a.jpeg", "json/media-cat-one/b4b.png", "json/media-cat-one/b4c.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Beliz Twiggy Blazer Sustainable",
+                    "price": "1.499",
+                    "description": "Our beloved Beliz Twiggy blazer is crafted from new sustainable fabrics. This ultimate power blazer is cut in sharp double-breasted silhouette and adorned with gold embossed buttons, that draws in the waist and enhance your beautiful figure. Complete the power look with tailored pants for the office or skinny jeans for a cool and sophisticated look.",
+                    "img_url": ["json/media-cat-one/b5a.jpeg", "json/media-cat-one/b5b.jpeg", "json/media-cat-one/b5c.png", "json/media-cat-one/b5d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Lopez Pique Blazer",
+                    "price": "1.299",
+                    "description": "Transform your spring outfit with this relaxed, slightly boy-ish blazer. It’s crafted from soft cotton pique, making it comfy to wear and so versatile. It has wide notch lapels, button closure and front pockets. The length is slightly cropped, making it a perfect match for high-rise pants with a neatly tucked shirt underneath.",
+                    "img_url": ["json/media-cat-one/b6a.jpeg", "json/media-cat-one/b6b.jpeg", "json/media-cat-one/b6c.png", "json/media-cat-one/b6d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Beliz Twiggy Blazer",
+                    "price": "1.499",
+                    "description": "A blazer is such a cool way to elevate your look, use this as a modern take on the power suit. Cut in a double-breasted fit, adorned with beautiful gold-embossed buttons. The fitted silhouette and buttons draw in the waist and gives you a beautiful shape. Complete the look with tailored pants or be bold and wear it with jeans.",
+                    "img_url": ["json/media-cat-one/b7a.jpeg", "json/media-cat-one/b7b.jpeg", "json/media-cat-one/b7c.png", "json/media-cat-one/b7d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Blake Jolly Blazer",
+                    "price": "1.499",
+                    "description": "You can always count on a check blazer to lift an outfit. Designed in a slim silhouette with single button fastening to lightly draw in the silhouette, welt pockets and buttoned cuffs. Match the blue tones in the check by pairing it with jeans in a light blue wash.",
+                    "img_url": ["json/media-cat-one/b8a.jpeg", "json/media-cat-one/b8b.png", "json/media-cat-one/b8c.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+                }
+
+            ]
+        },
+        {
+            "type": "text",
+            "title": "",
+            "subtitle": "We care about the planet",
+            "article": "At MOS MOSH we believe that good quality and timeless designs are the baseline for sustainable fashion. It is of high importance to us to create products that live up to our customers’ requirements in regard to quality and sustainability, while still meeting their need for fashionable garments. <br> <br> We want to be honest and be transparent in what we actually mean, when we say a garment is sustainable. It is a jungle to navigate in the world of sustainability, and therefore, we believe we have an obligation to make our initiatives transparent and easy to understand."
+        },
         {
 
             "type": "category",
@@ -174,179 +336,11 @@
 
             ]
         },
-        {
-            "type": "text",
-            "title": "",
-            "subtitle": "We care about the planet",
-            "article": "At MOS MOSH we believe that good quality and timeless designs are the baseline for sustainable fashion. It is of high importance to us to create products that live up to our customers’ requirements in regard to quality and sustainability, while still meeting their need for fashionable garments. <br> <br> We want to be honest and be transparent in what we actually mean, when we say a garment is sustainable. It is a jungle to navigate in the world of sustainability, and therefore, we believe we have an obligation to make our initiatives transparent and easy to understand."
-        },
-        {
-
-            "type": "category",
-            "title": "Dresses",
-            "parallax_img": "json/media-cat-one/parallax1.webp",
-            "products": [{
-                    "title": "Aslaug Shirt Dress",
-                    "price": "899",
-                    "description": "Get ready for summer with this modernized spin on a shirt dress. Crafted from crisp cotton in a loose fit, finished with belt to cinch in the waist. It has button closure, sharp collar and midi-sleeves. We added pockets because simply because we are pockets! This looks amazing with a summer tan and sandals at day, switching to heels and lip gloss at night.",
-                    "img_url": ["json/media-cat-one/d1a.jpeg", "json/media-cat-one/d1b.png", "json/media-cat-one/d1c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Malise Zebra Dress",
-                    "price": "1.199",
-                    "description": "This zebra print summer dress is easy to throw on. Cut in a comfortably relaxed shape that’s just perfect for casual days. It’s made from lightweight viscose crepe and designed with ruffle details at cuff, at front and at waist. Wear it with sandals on vacation and switch to heels for a night out.",
-                    "img_url": ["json/media-cat-one/d2a.jpeg", "json/media-cat-one/d2b.png", "json/media-cat-one/d2c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Brielle Linen Tunic",
-                    "price": "799",
-                    "description": "This is one of those styles that are simply made for hot summer days. Spun from airy linen in a slightly loose fit, designed with button closure, short sleeves and dipped hem in the back. Use it as a sundress to the beach or open as a cool jacket with denim shorts and a tank top.",
-                    "img_url": ["json/media-cat-one/d3a.jpeg", "json/media-cat-one/d3b.png", "json/media-cat-one/d3c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Rikas Costa Dress",
-                    "price": "1.299",
-                    "description": "This beautiful poppy print makes us ready for spring and flowers in bloom. The loose silhouette is highlighted with wide butterfly sleeves and drawstrings to highlight the waist. The length hits just above the knee, making it perfect for a spring garden party paired with heeled sandals.",
-                    "img_url": ["json/media-cat-one/d4a.jpeg", "json/media-cat-one/d4b.png", "json/media-cat-one/d4c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Rory Lolly Dress",
-                    "price": "1.499",
-                    "description": "Florals for spring is a no-brainer and we so excited over this beautiful retro flower print! The silhouette of the shirt dress is relaxed, it has button closure, sharp shirt collar and wide cuffs. Use the matching belt to highlight the narrowest pair of your silhouette. Complete the spring look with suede flats and don’t forget a pink lipstick.",
-                    "img_url": ["json/media-cat-one/d5a.jpeg", "json/media-cat-one/d5b.png", "json/media-cat-one/d5c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Tinka Chintz Dress",
-                    "price": "1.499",
-                    "description": "An effortless take on this season’s vacation wear is to incorporate paisley print to your wardrobe. We love how the relaxed fit and tiered hem floats so elegantly when you move. The feminine gathered neckline with ties can be done up or left loose. Style yours with flat loafers for a casual lunch or style it with high heels for a night out.",
-                    "img_url": ["json/media-cat-one/d6a.jpeg", "json/media-cat-one/d6b.png", "json/media-cat-one/d6c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Sierra Cole Dress",
-                    "price": "1.299",
-                    "description": "We are very inspired by utility this season. And this shirt dress in relaxed fit is a perfect combination of utility and feminine. It has multiple pockets at front, both functional and stylish and the puff sleeves add some femininity to the shape. Use the matching belt to cinch in your waist. Wear yours with suede boots.",
-                    "img_url": ["json/media-cat-one/d7a.jpeg", "json/media-cat-one/d7b.png", "json/media-cat-one/d7c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Meta Knit Dress",
-                    "price": "999",
-                    "description": "A knitted dress is such a fun style for the season, especially when it’s packed with plenty of glamorous glittery lurex. The knit is softly pleated, and it has a flattering a-shape. Finished with feminine short billowy sleeves. Try styling it with leather leggings for a raw but festive outfit, or simply on its own with tights and heeled boots.",
-                    "img_url": ["json/media-cat-one/d8a.jpeg", "json/media-cat-one/d8b.png", "json/media-cat-one/d8c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Kanela Thistle Dress",
-                    "price": "1.299",
-                    "description": "We are inspired by the beautiful shapes and colours of dried flowers this season. This maxi dress silhouette is a go-to for spring with the flattering V-neck and romantic puff sleeves. The smock at back draws in the waist naturally while the belt lets you highlight the waist even more. Wear with sandals for a casual day look, switching to heels for a night out with your favorite crowd.",
-                    "img_url": ["json/media-cat-one/d9a.webp", "json/media-cat-one/d9b.webp", "json/media-cat-one/d9c.webp"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Saku 3/4 Chintz Dress",
-                    "price": "1.299",
-                    "description": "This dress is made to flatter you in every way. The silhouette is feminine, yet relaxed, it has slightly puffed sleeves and tiered hem that falls effortlessly. Wear yours with sandals to a night out dancing, showing off the beautiful movement of the chintz paisley fabric.",
-                    "img_url": ["json/media-cat-one/d10a.webp", "json/media-cat-one/d10b.webp", "json/media-cat-one/d10c.webp"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Adine Mini Check Dress",
-                    "price": "999",
-                    "description": "This is one of those dresses that are easy to pick in the morning. The slightly A-shaped silhouette is crafted from soft lyocell with a subtle shine, that feels great on the skin. It has open collar placket and elasticated sleeves. Transform the silhouette with the matching belt or wear without for a laid-back tunic look. Wear sandals or sneakers at Saturday brunches.",
-                    "img_url": ["json/media-cat-one/d11a.jpeg", "json/media-cat-one/d11b.png", "json/media-cat-one/d11c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                },
-                {
-                    "title": "Selby Leo Dress",
-                    "price": "1.299",
-                    "description": "This cool leo print shirt dress pays an homage to the ‘70s. Cut to fit you silhouette and detailed visible front button closure and at cuffs. It has deep square pockets at each side. Use the matching belt to cinch in your waist. Style with ankle boots.",
-                    "img_url": ["json/media-cat-one/d12a.jpeg", "json/media-cat-one/d12b.png", "json/media-cat-one/d12c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
-                }
-            ]
-
-        },
+        
         {
             "type": "text",
             "title": "",
             "subtitle": "We put passion, love & heart into everything we do. Our garments are made to be worn with passion and meant to be loved forever.",
-            "article": ""
-        },
-        {
-
-            "type": "category",
-            "title": "Blazers",
-            "products": [{
-                    "title": "Bena Lolly Blazer",
-                    "price": "1.499",
-                    "description": "Embrace the nostalgic feeling with this stunning floral blazer. It’s designed in a relaxed fit with single button closure, finished with light brown piping and front pockets. Wear yours with a silk top and light blue jeans. Don’t forget to add your favorite spring lip gloss!",
-                    "img_url": ["json/media-cat-one/b1a.jpeg", "json/media-cat-one/b1b.png", "json/media-cat-one/b1c.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                },
-                {
-                    "title": "Tropez Linen Blazer",
-                    "price": "1.299",
-                    "description": "Upgrade your outfit with this luxurious linen-blend blazer, cut in a flattering fitted silhouette. The collarless design makes it look so sophisticated, while the big bellow pockets and matching belt gives it a utility inspired feel. We like it paired with denim or layered over a dress for an evening out.",
-                    "img_url": ["json/media-cat-one/b2a.jpeg", "json/media-cat-one/b2b.png", "json/media-cat-one/b2c.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-
-                },
-                {
-                    "title": "Jane Brink Blazer",
-                    "price": "1.699",
-                    "description": "Upgrade your spring outfit with this blazer in a relaxed fit. We love the structured fabric, reminding us of crisp linen. It’s designed with single button fastening, front pockets and stunning chintz paisley print lining. Pair with short and a logo tee to portray extra coolness.",
-                    "img_url": ["json/media-cat-one/b3a.jpeg", "json/media-cat-one/b3b.png", "json/media-cat-one/b3c.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-
-                },
-                {
-                    "title": "Blake Ria Blazer",
-                    "price": "1.599",
-                    "description": "You can never go wrong with a tailored blazer and this slim fit is a winner! Designed with single button closure to draw in the waist, lightly padded shoulders and buttoned cuffs. Style with neutral-coloured tones for a fresh spring look.",
-                    "img_url": ["json/media-cat-one/b4a.jpeg", "json/media-cat-one/b4b.png", "json/media-cat-one/b4c.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                },
-                {
-                    "title": "Beliz Twiggy Blazer Sustainable",
-                    "price": "1.499",
-                    "description": "Our beloved Beliz Twiggy blazer is crafted from new sustainable fabrics. This ultimate power blazer is cut in sharp double-breasted silhouette and adorned with gold embossed buttons, that draws in the waist and enhance your beautiful figure. Complete the power look with tailored pants for the office or skinny jeans for a cool and sophisticated look.",
-                    "img_url": ["json/media-cat-one/b5a.jpeg", "json/media-cat-one/b5b.jpeg", "json/media-cat-one/b5c.png", "json/media-cat-one/b5d.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                },
-                {
-                    "title": "Lopez Pique Blazer",
-                    "price": "1.299",
-                    "description": "Transform your spring outfit with this relaxed, slightly boy-ish blazer. It’s crafted from soft cotton pique, making it comfy to wear and so versatile. It has wide notch lapels, button closure and front pockets. The length is slightly cropped, making it a perfect match for high-rise pants with a neatly tucked shirt underneath.",
-                    "img_url": ["json/media-cat-one/b6a.jpeg", "json/media-cat-one/b6b.jpeg", "json/media-cat-one/b6c.png", "json/media-cat-one/b6d.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                },
-                {
-                    "title": "Beliz Twiggy Blazer",
-                    "price": "1.499",
-                    "description": "A blazer is such a cool way to elevate your look, use this as a modern take on the power suit. Cut in a double-breasted fit, adorned with beautiful gold-embossed buttons. The fitted silhouette and buttons draw in the waist and gives you a beautiful shape. Complete the look with tailored pants or be bold and wear it with jeans.",
-                    "img_url": ["json/media-cat-one/b7a.jpeg", "json/media-cat-one/b7b.jpeg", "json/media-cat-one/b7c.png", "json/media-cat-one/b7d.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                },
-                {
-                    "title": "Blake Jolly Blazer",
-                    "price": "1.499",
-                    "description": "You can always count on a check blazer to lift an outfit. Designed in a slim silhouette with single button fastening to lightly draw in the silhouette, welt pockets and buttoned cuffs. Match the blue tones in the check by pairing it with jeans in a light blue wash.",
-                    "img_url": ["json/media-cat-one/b8a.jpeg", "json/media-cat-one/b8b.png", "json/media-cat-one/b8c.png"],
-                    "variants": ["34", "36", "38", "40", "42", "44"]
-                }
-
-            ]
-        },
-        {
-            "type": "text",
-            "title": "",
-            "subtitle": "Designed with heart, worn with passion, loved forever",
             "article": ""
         },
         {

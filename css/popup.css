@@ -1,5 +1,5 @@
 /* POP-UP */
-.popup-wrapper{ 
+.popup-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,15 +8,16 @@
     margin: auto;
     width: 800px;
     height: 500px;
-    z-index: 10;
+    z-index: 100;
     background-color: #fff;
 }
+
 .popup {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     width: 800px;
     height: 500px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); 
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .slider-wrapper {
@@ -64,8 +65,10 @@
 .dots-wrapper {
     position: absolute;
     bottom: 10px;
-    left: 180px;
+    left: 0;
+    right: 0;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -76,13 +79,14 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #a3a3a3;
-  }
+}
 
-  /* popup right side - details -----------------------------*/
+.active,
+.dot:hover {
+    background-color: #a3a3a3;
+}
+
+/* popup right side - details -----------------------------*/
 .popup-details-wrapper {
     display: flex;
     flex-direction: column;
@@ -109,7 +113,7 @@
     margin-bottom: 30px;
 
     display: -webkit-box;
-    -webkit-line-clamp:8;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -125,7 +129,7 @@
     outline: none;
 }
 
-.popup-details-wrapper select:hover{
+.popup-details-wrapper select:hover {
     cursor: pointer;
 }
 
@@ -135,7 +139,7 @@
     font-size: 12px;
 }
 
-.popup-cart-btn{
+.popup-cart-btn {
     color: #fff;
     border: none;
     width: 120px;
@@ -164,5 +168,55 @@
 }
 
 .popup-close-btn:hover {
-cursor: pointer; 
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Mobile and tablet version ----------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+    /* POP-UP */
+    .popup-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .popup {
+        flex-direction: column;
+
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+
+
+    .images {
+        width: 100vw;
+        height: 80vh;
+    }
+
+
+ 
+
+    /* popup right side - details -----------------------------*/ 
+    .popup-cart-btn { 
+        margin: 50px auto 15px;
+    }
+  
+    .popup-details-wrapper a { 
+        margin: 0 auto 10px auto;
+    
+    }
+
+    .popup-close-btn { 
+
+    font-size: 35px;
+    }
+
+     
 }
