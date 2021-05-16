@@ -3,8 +3,7 @@ var setPopupSlider = function (popupContainer) {
   
   let arr = [];
   var dots = popupContainer.getElementsByClassName("dot");
-
-  debugger;
+ 
   for(var i = 0;i<dots.length;i++)
   {
     arr.push(dots[i].getAttribute("data-imgurl"));

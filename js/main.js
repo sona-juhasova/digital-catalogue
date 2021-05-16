@@ -75,7 +75,7 @@ function appendCatalogue(sections, settings) {
 
 }
 
-function openPopup(target) {
+function openPopup(target) { 
     var popupWrapper = target.parentElement.getElementsByClassName("popup-wrapper")[0];
 
     popupWrapper.style.display = "block";

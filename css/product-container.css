@@ -58,16 +58,15 @@
     align-items: center;
 }
 
-.action-btn::before {
-    content: "+";
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-
+.action-btn img{
+    margin:auto;
+    width: 18px;
+    height: 18px;
 }
+ 
 
 .action-btn:hover {
     cursor: pointer;
-    /* transform: scale(1.05); */
-    transform: translateY(-1px);
+    transform: scale(1.05);
+    /* transform: translateY(-1px); */
 }

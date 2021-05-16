@@ -1,3 +1,4 @@
+// intro section template
 let introTemplate = function (section) {
     return /*html*/ `
 <div class="intro-img">
@@ -6,46 +7,21 @@ let introTemplate = function (section) {
 `;
 }
 
-let textElementTemplate = function (section) {
+// text element template (title, subtitle, article)
+let textElementTemplate = function (section, settings) {
     return /*html*/ `
-<div class="text-element">
+<div class="text-element" style="font-family: ${settings.font}; color: ${settings.font_color};">
     <h1>${section.title}</h1>
     <h2>${section.subtitle}</h2>
-    <h3>${section.article}</h3>
+    <p>${section.article}</p>
 </div>
 `;
 }
 
-// product templates
-let productOptionTemplate = function(options)
-{
-    var optionString = "";
-    for(var i=0;i<options.length;i++)
-    {
-        optionString += `<option value="${options[i]}">`+options[i]+`</option>`;
-    }
-    return optionString;
-}
-let sliderDotTemplate = function(img_url)
-{
-    var dotsString = "";
-    for(var i=0;i<img_url.length;i++)
-    {
-        dotsString += `<span class="dot" onclick="setSliderImage(${i})" data-imgUrl="${img_url[i]}"></span>`;
-    }
-    return dotsString;
-}
-let singleProductTemplate = function (product) {
+// popup templates 
+let popupTemplate = function (product, settings) {
     return /*html*/ `
-<div class="product-container" style="background-image:url('${product.img_url[0]}');">
-            <div class="action-btn" style="background-color: red;" onclick="openPopup(this)"></div>
-            <div class="product-details">
-                <h1>${product.title}</h1>
-                <h2>${product.price} kr</h2>
-                <p>${product.description}</p>
-            </div>
-            <!-- popup -->
-            <div class="popup-wrapper" style="display: none;">
+<div class="popup-wrapper" style="display: none;">
                 <div class="popup">
                     <div class="slider-wrapper">
                         <img class="left" src="media/arrow-left.svg" />
@@ -55,7 +31,7 @@ let singleProductTemplate = function (product) {
                             ${sliderDotTemplate(product.img_url)}
                         </div>
                     </div>
-                    <div class="popup-details-wrapper">
+                    <div class="popup-details-wrapper" style="font-family: ${settings.font}; color: ${settings.font_color};">
                         <button class="popup-close-btn" onclick="closePopup(this)">&Cross;</button>
                         <h1>${product.title}</h1>
                         <h2>${product.price} kr</h2>
@@ -64,51 +40,93 @@ let singleProductTemplate = function (product) {
                             <option value="">Select</option>
                             ${productOptionTemplate(product.variants)}
                         </select>
-                        <button class="popup-cart-btn" style="background-color: red;">Add to cart</button>
+                        <button class="popup-cart-btn" style="background-color: ${settings.color};font-family: ${settings.font}; ">Add to cart</button>
                         <a href="#">See product page &rarr;</a>
                     </div>
                 </div>
             </div>
-        </div>
-        `;
+`;
 }
 
+let productOptionTemplate = function (options) {
+    var optionString = "";
+    for (var i = 0; i < options.length; i++) {
+        optionString += `<option value="${options[i]}">` + options[i] + `</option>`;
+    }
+    return optionString;
+}
+
+
+let sliderDotTemplate = function (img_url) {
+    var dotsString = "";
+    for (var i = 0; i < img_url.length; i++) {
+        dotsString += `<span class="dot" onclick="setSliderImage(${i})" data-imgUrl="${img_url[i]}"></span>`;
+    }
+    return dotsString;
+}
+
+// parallax 
 let parallaxTemplate = function (section) {
     return /*html*/ `
 <div class="parallax-window" data-parallax="scroll" data-image-src="${section.parallax_img}"></div>
         `;
 }
-let slideshowTemplate = function (product1, product2, product3) {
+
+// product template
+let singleProductTemplate = function (product, settings) {
+    return /*html*/ `
+<div class="product-container" style="background-image:url('${product.img_url[0]}');">
+            <div class="action-btn" style="background-color: ${settings.color};" onclick="openPopup(this)"><img src="./media/plus-icon.svg" alt="plus-icon"></div>
+            <div class="product-details">
+                <h1>${product.title}</h1>
+                <h2>${product.price} kr</h2>
+                <p>${product.description}</p>
+            </div>
+            <!-- popup -->
+            ${popupTemplate(product, settings)}
+
+        </div>
+        `;
+}
+
+// slideshow with 3 products
+let slideshowTemplate = function (product1, product2, product3, settings) {
     return /*html*/ `
 <div class="container slider-container">
             <div class="mySlides">
                 <div class="product-container-slideshow" style="background-image:url('${product1.img_url[0]}');">
-                    <div class="action-btn" style="background-color: red;"></div>
+                    <div class="action-btn" style="background-color: ${settings.color};" onclick="openPopup(this)"><img src="./media/plus-icon.svg" alt="plus-icon"></div>
                     <div class="product-details-slideshow">
                         <h1>${product1.title}</h1>
                         <h2>${product1.price} kr</h2>
                         <p>${product1.description}</p>
-                    </div>
+                    </div> 
+                    <!-- popup -->
+               ${popupTemplate(product1, settings)}
                 </div>
             </div>
             <div class="mySlides">
                 <div class="product-container-slideshow" style="background-image:url('${product2.img_url[0]}');">
-                    <div class="action-btn" style="background-color: red;"></div>
+                    <div class="action-btn" style="background-color: ${settings.color};" onclick="openPopup(this)"><img src="./media/plus-icon.svg" alt="plus-icon"></div>
                     <div class="product-details-slideshow">
                         <h1>${product2.title}</h1>
                         <h2>${product2.price} kr</h2>
                         <p>${product2.description}</p>
                     </div>
+                      <!-- popup -->
+               ${popupTemplate(product2, settings)}
                 </div>
             </div>
             <div class="mySlides">
                 <div class="product-container-slideshow" style="background-image:url('${product3.img_url[0]}');">
-                    <div class="action-btn" style="background-color: red;"></div>
+                    <div class="action-btn" style="background-color: ${settings.color};" onclick="openPopup(this)"><img src="./media/plus-icon.svg" alt="plus-icon"></div>
                     <div class="product-details-slideshow">
                         <h1>${product3.title}</h1>
                         <h2>${product3.price} kr</h2>
                         <p>${product3.description}</p>
                     </div>
+                      <!-- popup -->
+               ${popupTemplate(product3, settings)}
                 </div>
             </div>
             <a class="prev" >
@@ -138,20 +156,20 @@ let slideshowTemplate = function (product1, product2, product3) {
 
 let sectionSmall = function (section, settings) {
     return /*html*/ ` 
-    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
-    <div class="section-container-small">
+    <h1 class="section-title" style="font-family: ${settings.font}; color: ${settings.font_color};">${section.title}</h1>
+    <div class="section-container-small" style="font-family: ${settings.font}; color: ${settings.font_color};">
         <div class="group-of-four">
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[0])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[1])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[0], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[1], settings)}</div>
             </div>
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[2])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[3])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[2], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[3], settings)}</div>
             </div>
         </div>
-        <div class="section-item-big">${singleProductTemplate(section.products[4])}</div>
-        <div class="section-item-slider">${slideshowTemplate(section.products[5],section.products[6],section.products[7])}</div>
+        <div class="section-item-big">${singleProductTemplate(section.products[4], settings)}</div>
+        <div class="section-item-slider">${slideshowTemplate(section.products[5],section.products[6],section.products[7], settings)}</div>
     </div>
     
     
@@ -161,36 +179,36 @@ let sectionSmall = function (section, settings) {
 
 let sectionMedium = function (section, settings) {
     return /*html*/ `
-    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
-    <div class="section-container-medium">
+    <h1 class="section-title" style="font-family: ${settings.font}; color: ${settings.font_color};">${section.title}</h1>
+    <div class="section-container-medium" style="font-family: ${settings.font}; color: ${settings.font_color};">
         <div class="group-of-three">
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[0])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[1])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[0], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[1], settings)}</div>
             </div>
-            <div class="section-item-big">${singleProductTemplate(section.products[2])}</div>
+            <div class="section-item-big">${singleProductTemplate(section.products[2], settings)}</div>
         </div>
         <div class="group-of-three">
-            <div class="section-item-big">${singleProductTemplate(section.products[3])}</div>
+            <div class="section-item-big">${singleProductTemplate(section.products[3], settings)}</div>
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[4])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[5])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[4], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[5], settings)}</div>
             </div>
         </div>
         <div class="section-item-parallax">${parallaxTemplate(section)}</div> 
         <div class="group-of-three">
-            <div class="section-item-big">${singleProductTemplate(section.products[6])}</div>
+            <div class="section-item-big">${singleProductTemplate(section.products[6], settings)}</div>
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[7])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[8])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[7], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[8], settings)}</div>
             </div>
         </div>
         <div class="group-of-three">
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[9])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[10])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[9], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[10], settings)}</div>
             </div>
-            <div class="section-item-big">${singleProductTemplate(section.products[11])}</div>
+            <div class="section-item-big">${singleProductTemplate(section.products[11], settings)}</div>
         </div>
     </div>
     
@@ -201,35 +219,35 @@ let sectionMedium = function (section, settings) {
 
 let sectionLarge = function (section, settings) {
     return /*html*/ `
-    <h1 class="section-title" style="${settings.font}">${section.title}</h1>
-    <div class="section-container-large">
-        <div class="section-item-slider">${slideshowTemplate(section.products[0],section.products[1],section.products[2])}</div>
+    <h1 class="section-title" style="font-family: ${settings.font}; color: ${settings.font_color};">${section.title}</h1>
+    <div class="section-container-large" style="font-family: ${settings.font}; color: ${settings.font_color};">
+        <div class="section-item-slider">${slideshowTemplate(section.products[0],section.products[1],section.products[2], settings)}</div>
         
-        <div class="section-item-small">${singleProductTemplate(section.products[3])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[4])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[5])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[6])}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[3], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[4], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[5], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[6], settings)}</div>
         <div class="group-of-five">
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[7])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[8])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[7], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[8], settings)}</div>
             </div>
-            <div class="section-item-big">${singleProductTemplate(section.products[9])}</div>
+            <div class="section-item-big">${singleProductTemplate(section.products[9], settings)}</div>
             <div>
-                <div class="section-item-small">${singleProductTemplate(section.products[10])}</div>
-                <div class="section-item-small">${singleProductTemplate(section.products[11])}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[10], settings)}</div>
+                <div class="section-item-small">${singleProductTemplate(section.products[11], settings)}</div>
             </div>
         </div>
-        <div class="section-item-small">${singleProductTemplate(section.products[12])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[13])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[14])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[15])}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[12], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[13], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[14], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[15], settings)}</div>
         <div class="section-item-parallax">${parallaxTemplate(section)}</div> 
         
-        <div class="section-item-small">${singleProductTemplate(section.products[16])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[17])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[18])}</div>
-        <div class="section-item-small">${singleProductTemplate(section.products[19])}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[16], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[17], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[18], settings)}</div>
+        <div class="section-item-small">${singleProductTemplate(section.products[19], settings)}</div>
     </div>
     
     

@@ -1,14 +1,15 @@
 {
     "settings": {
-        "color": "red",
-        "font": "Times New Roman"
+        "color": "#7b4b35",
+        "font": "Optima, sans-serif",
+        "font_color": "#56362c"
     }
 
     ,
 
     "sections": [{
             "type": "intro",
-            "intro_img": "json/media-cat-one/t1a.jpeg"
+            "intro_img": "json/media-cat-one/parallax4.webp"
         }
 
         ,
@@ -24,12 +25,12 @@
 
             "type": "category",
             "title": "Tops",
-            "parallax_img": "json/media-cat-one/t1a.jpeg",
+            "parallax_img": "json/media-cat-one/parallax2.webp",
             "products": [{
                     "title": "Rade O-SS Tee",
                     "price": "499",
                     "description": "This cool tee will upgrade every outfit. It’s crafted in soft structured cotton-blend in a relaxed shape. We added a chest pocket with orange tape details, just to make it pop. Wear yours with cargo pants or a denim skirt.",
-                    "img_url": ["json/media-cat-one/t1a.jpeg", "json/media-cat-one/t1b.webp", "json/media-cat-one/t1c.webp"],
+                    "img_url": ["json/media-cat-one/t1a.jpeg", "json/media-cat-one/t1b.webp", "json/media-cat-one/t1c.webp", "json/media-cat-one/t1d.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 }
 
@@ -38,7 +39,7 @@
                     "title": "Essie O-SS Tee",
                     "price": "399",
                     "description": "We transformed the classic tee silhouette with this tee. Designed in a relaxed fit with elasticated sleeves and slightly puffed shoulders. Decorated with LIVE-LOVE-LAUGH lettering at front with shiny stones. Balance the feminine shape by wearing it with casual cargo pants and ankle boots.",
-                    "img_url": ["json/media-cat-one/t2a.jpeg", "json/media-cat-one/t2b.jpeg", "json/media-cat-one/t2c.png"],
+                    "img_url": ["json/media-cat-one/t2a.jpeg", "json/media-cat-one/t2b.jpeg", "json/media-cat-one/t2c.png", "json/media-cat-one/t2d.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 }
 
@@ -61,7 +62,7 @@
                     "title": "Savina SS Tee",
                     "price": "499",
                     "description": "Looking for a flattering silhouette that will make you shine? This beautiful tee is cut in a loose silhouette from soft ripped modal. The neckline has a flattering waterfall effect that fall effortlessly. Complete the look with classic tailoring or with ecru-coloured pants and light jacket.",
-                    "img_url": ["json/media-cat-one/t5a.jpg", "json/media-cat-one/t5b.jpg", "json/media-cat-one/t5c.png"],
+                    "img_url": ["json/media-cat-one/t5a.jpg", "json/media-cat-one/t5b.jpg", "json/media-cat-one/t5c.png", "json/media-cat-one/t5d.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
@@ -117,7 +118,7 @@
                     "title": "Bounce V-SS Tee",
                     "price": "499",
                     "description": "One of this season’s hottest trends are colour blocking! We love this loose tee with colour block design at front. The V-neck makes it extra flattering and the raw edges at sleeves and hem makes it very casual. This goes with anything from cargo pants to denim jeans.",
-                    "img_url": ["json/media-cat-one/t13a.jpeg", "json/media-cat-one/t13b.jpeg", "json/media-cat-one/t13c.png"],
+                    "img_url": ["json/media-cat-one/t13a.jpeg", "json/media-cat-one/t13b.jpeg", "json/media-cat-one/t13c.png", "json/media-cat-one/t13d.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
@@ -159,7 +160,7 @@
                     "title": "Vee O-SS Tee",
                     "price": "499",
                     "description": "You can count on a logo tee to make you look cool. This super soft cotton tee is cut in slim fit and detailed with gold MOS MOSH logo and a fierce looking pearl beaded snake at front. It looks so cool with tailoring and flat leather brogues for the perfect office look.",
-                    "img_url": ["json/media-cat-one/t19a.jpeg", "json/media-cat-one/t19b.jpeg", "json/media-cat-one/t19c.png"],
+                    "img_url": ["json/media-cat-one/t19a.jpeg", "json/media-cat-one/t19b.jpeg", "json/media-cat-one/t19c.png", "json/media-cat-one/t19d.png"],
                     "variants": ["XS", "S", "M", "L", "XL"]
                 },
                 {
@@ -174,10 +175,16 @@
             ]
         },
         {
+            "type": "text",
+            "title": "",
+            "subtitle": "We care about the planet",
+            "article": "At MOS MOSH we believe that good quality and timeless designs are the baseline for sustainable fashion. It is of high importance to us to create products that live up to our customers’ requirements in regard to quality and sustainability, while still meeting their need for fashionable garments. <br> <br> We want to be honest and be transparent in what we actually mean, when we say a garment is sustainable. It is a jungle to navigate in the world of sustainability, and therefore, we believe we have an obligation to make our initiatives transparent and easy to understand."
+        },
+        {
 
             "type": "category",
             "title": "Dresses",
-            "parallax_img": "json/media-cat-one/t1a.jpeg",
+            "parallax_img": "json/media-cat-one/parallax1.webp",
             "products": [{
                     "title": "Aslaug Shirt Dress",
                     "price": "899",
@@ -266,6 +273,12 @@
 
         },
         {
+            "type": "text",
+            "title": "",
+            "subtitle": "We put passion, love & heart into everything we do. Our garments are made to be worn with passion and meant to be loved forever.",
+            "article": ""
+        },
+        {
 
             "type": "category",
             "title": "Blazers",
@@ -274,58 +287,219 @@
                     "price": "1.499",
                     "description": "Embrace the nostalgic feeling with this stunning floral blazer. It’s designed in a relaxed fit with single button closure, finished with light brown piping and front pockets. Wear yours with a silk top and light blue jeans. Don’t forget to add your favorite spring lip gloss!",
                     "img_url": ["json/media-cat-one/b1a.jpeg", "json/media-cat-one/b1b.png", "json/media-cat-one/b1c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 },
                 {
                     "title": "Tropez Linen Blazer",
                     "price": "1.299",
                     "description": "Upgrade your outfit with this luxurious linen-blend blazer, cut in a flattering fitted silhouette. The collarless design makes it look so sophisticated, while the big bellow pockets and matching belt gives it a utility inspired feel. We like it paired with denim or layered over a dress for an evening out.",
                     "img_url": ["json/media-cat-one/b2a.jpeg", "json/media-cat-one/b2b.png", "json/media-cat-one/b2c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+
                 },
                 {
                     "title": "Jane Brink Blazer",
                     "price": "1.699",
                     "description": "Upgrade your spring outfit with this blazer in a relaxed fit. We love the structured fabric, reminding us of crisp linen. It’s designed with single button fastening, front pockets and stunning chintz paisley print lining. Pair with short and a logo tee to portray extra coolness.",
                     "img_url": ["json/media-cat-one/b3a.jpeg", "json/media-cat-one/b3b.png", "json/media-cat-one/b3c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "variants": ["34", "36", "38", "40", "42", "44"]
+
                 },
                 {
                     "title": "Blake Ria Blazer",
                     "price": "1.599",
                     "description": "You can never go wrong with a tailored blazer and this slim fit is a winner! Designed with single button closure to draw in the waist, lightly padded shoulders and buttoned cuffs. Style with neutral-coloured tones for a fresh spring look.",
                     "img_url": ["json/media-cat-one/b4a.jpeg", "json/media-cat-one/b4b.png", "json/media-cat-one/b4c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 },
                 {
                     "title": "Beliz Twiggy Blazer Sustainable",
                     "price": "1.499",
                     "description": "Our beloved Beliz Twiggy blazer is crafted from new sustainable fabrics. This ultimate power blazer is cut in sharp double-breasted silhouette and adorned with gold embossed buttons, that draws in the waist and enhance your beautiful figure. Complete the power look with tailored pants for the office or skinny jeans for a cool and sophisticated look.",
-                    "img_url": ["json/media-cat-one/b5a.jpeg", "json/media-cat-one/b5b.jpeg", "json/media-cat-one/b5c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "img_url": ["json/media-cat-one/b5a.jpeg", "json/media-cat-one/b5b.jpeg", "json/media-cat-one/b5c.png", "json/media-cat-one/b5d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 },
                 {
                     "title": "Lopez Pique Blazer",
                     "price": "1.299",
                     "description": "Transform your spring outfit with this relaxed, slightly boy-ish blazer. It’s crafted from soft cotton pique, making it comfy to wear and so versatile. It has wide notch lapels, button closure and front pockets. The length is slightly cropped, making it a perfect match for high-rise pants with a neatly tucked shirt underneath.",
-                    "img_url": ["json/media-cat-one/b6a.jpeg", "json/media-cat-one/b6b.jpeg", "json/media-cat-one/b6c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "img_url": ["json/media-cat-one/b6a.jpeg", "json/media-cat-one/b6b.jpeg", "json/media-cat-one/b6c.png", "json/media-cat-one/b6d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 },
                 {
                     "title": "Beliz Twiggy Blazer",
                     "price": "1.499",
                     "description": "A blazer is such a cool way to elevate your look, use this as a modern take on the power suit. Cut in a double-breasted fit, adorned with beautiful gold-embossed buttons. The fitted silhouette and buttons draw in the waist and gives you a beautiful shape. Complete the look with tailored pants or be bold and wear it with jeans.",
-                    "img_url": ["json/media-cat-one/b7a.jpeg", "json/media-cat-one/b7b.jpeg", "json/media-cat-one/b7c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "img_url": ["json/media-cat-one/b7a.jpeg", "json/media-cat-one/b7b.jpeg", "json/media-cat-one/b7c.png", "json/media-cat-one/b7d.png"],
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 },
                 {
                     "title": "Blake Jolly Blazer",
-                    "price": "1.499", 
+                    "price": "1.499",
                     "description": "You can always count on a check blazer to lift an outfit. Designed in a slim silhouette with single button fastening to lightly draw in the silhouette, welt pockets and buttoned cuffs. Match the blue tones in the check by pairing it with jeans in a light blue wash.",
                     "img_url": ["json/media-cat-one/b8a.jpeg", "json/media-cat-one/b8b.png", "json/media-cat-one/b8c.png"],
-                    "variants": ["XS", "S", "M", "L", "XL"]
+                    "variants": ["34", "36", "38", "40", "42", "44"]
                 }
 
+            ]
+        },
+        {
+            "type": "text",
+            "title": "",
+            "subtitle": "Designed with heart, worn with passion, loved forever",
+            "article": ""
+        },
+        {
+
+            "type": "category",
+            "title": "Blouses",
+            "products": [{
+                    "title": "Phoenix Sky Blouse",
+                    "price": "799",
+                    "description": "This blouse is ideal to pack in your suitcase for your next vacation. The feminine shape is slightly relaxed and cut from recycled cotton-mix. It has a flattering V-neck with a cool crossover effect and feminine puff sleeves ending in smock details. We like it paired with the matching shorts, but it looks equally fabulous with white denim.",
+                    "img_url": ["json/media-cat-one/s1a.jpeg", "json/media-cat-one/s1b.jpeg", "json/media-cat-one/s1c.png", "json/media-cat-one/s1d.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Rikas Costa Blouse",
+                    "price": "799",
+                    "description": "This is such a flattering silhouette, that will make any woman look great. The wide butterfly sleeves are balanced with drawstrings at the waist to highlight the silhouette. We love the stunning poppy print that looks so exclusive with ecru-coloured jeans for a weekend lunch with the girls.",
+                    "img_url": ["json/media-cat-one/s2a.jpeg", "json/media-cat-one/s2b.png", "json/media-cat-one/s2c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Rikas Leia Blouse",
+                    "price": "799",
+                    "description": "This is such a wow-piece! We love the relaxed silhouette and wide butterfly sleeves that are so flattering. Use the wide matching belt to highlight the waist. Complete the look with the matching pants and suede flats.",
+                    "img_url": ["json/media-cat-one/s3a.jpeg", "json/media-cat-one/s3b.png", "json/media-cat-one/s3c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Lina Frill Blouse",
+                    "price": "799",
+                    "description": "With a nostalgic nod to the ‘70s, this feminine blouse is cut in a slightly relaxed A-shape. The blouse has a ruffled collar and with high neckline and buttoned front placket. The sleeve hits just above the elbow in a contrast stripe cuff. It’ll work so well with high-rise jeans.",
+                    "img_url": ["json/media-cat-one/s4a.jpeg", "json/media-cat-one/s4b.png", "json/media-cat-one/s4c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Gigi Lurex Blouse",
+                    "price": "999",
+                    "description": "Perfectly feminine and romantic, this flattering blouse is cut in a slightly loose silhouette with puff sleeves. Woven with hints of shimmery lurex that makes it shine when the light hits. Finished with billowy sleeves and keyhole at neck, revealing a subtle glimpse of skin. Wear with flared pants or tucked into a flowy plisse skirt.",
+                    "img_url": ["json/media-cat-one/s5a.jpeg", "json/media-cat-one/s5b.png", "json/media-cat-one/s5c.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Nadine Mini Check Blouse",
+                    "price": "799",
+                    "description": "Get checked out with this check blouse, cut in a flattering loose silhouette. It’s designed with open collar placket, balloon sleeves and slightly dipped hem. The lyocell fabric has a subtle shine to it making it feel and look great on the skin. We like it styles with blue jeans.",
+                    "img_url": ["json/media-cat-one/s6a.jpeg", "json/media-cat-one/s6b.jpeg", "json/media-cat-one/s6c.png", "json/media-cat-one/s6d.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Danna Linen Blouse",
+                    "price": "799",
+                    "description": "Is there anything better than linen shirts when the sun is bathing away? We think not! This one is cut in a relaxed fit and designed with button fattening halfway along front, buttoned cuffs and back pleat. It’s slightly longer in the curved hem at back. Still looks so great with ecru colored pants and sandals.",
+                    "img_url": ["json/media-cat-one/s7a.jpeg", "json/media-cat-one/s7b.jpeg", "json/media-cat-one/s7c.png", "json/media-cat-one/s7d.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                },
+                {
+                    "title": "Dee SS Linen Blouse",
+                    "price": "799",
+                    "description": "A linen blouse is perfect for hot summer weather. This feminine blouse is cut in a relaxed fit with short puff sleeves with soft pleats, and keyhole at back to reveal a glimpse of skin. Wear yours with shorts or tucked into high-rise jeans.",
+                    "img_url": ["json/media-cat-one/s8a.jpeg", "json/media-cat-one/s8b.jpeg", "json/media-cat-one/s8c.png", "json/media-cat-one/s8d.png"],
+                    "variants": ["XS", "S", "M", "L", "XL"]
+                }
+            ]
+        },
+        {
+
+            "type": "category",
+            "title": "Pants",
+            "parallax_img": "json/media-cat-one/parallax5.jpeg",
+            "products": [{
+                    "title": "Rita Gaia Pant",
+                    "price": "799",
+                    "description": "Create a beautiful silhouette with these wide legged pants, cut in a cool box fit with high/mid-rise. The soft front creased create a sharp and sophisticated look, and the hints of stretch in the fabric are made for daylong wear. We love the side zipper. Tuck in a flowy silk shirt to complete this season’s hottest ‘70s trend. *Please note that Duffel Bag and Biking Red is slightly longer.",
+                    "img_url": ["json/media-cat-one/p1a.jpeg", "json/media-cat-one/p1b.png", "json/media-cat-one/p1c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Christel Dali Pant",
+                    "price": "799",
+                    "description": "These pants are perfect for a relaxed weekend look. Crafted from cotton and a hint of comfy stretch and designed in a chino fit with high-rise. These have elasticated back and look perfectly smooth at front. The cropped hem is finished with fabric detail at the rolled cuff. We like it paired with a loose jumper and sneakers.",
+                    "img_url": ["json/media-cat-one/p2a.jpeg", "json/media-cat-one/p2b.png", "json/media-cat-one/p2c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Jules Leia Pant",
+                    "price": "899",
+                    "description": "These are the kind of tailored pants that will elevate every spring outfit! Designed in a box fit with high/mid-rise and pressed creases for a sophisticated finish. The cropped length looks great with ankle boots or suede flats. Complete the look with a casually tucked in tee and a smile.",
+                    "img_url": ["json/media-cat-one/p3a.jpeg", "json/media-cat-one/p3b.png", "json/media-cat-one/p3c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Gerry Twiggy Pant Sustainable",
+                    "price": "799",
+                    "description": "Look stylish with these tailored pants that are just as comfortable as sweatpants. Crafted in sustainable fabric with plenty of stretch. The elasticated back is perfectly balanced with the smooth look at the front. Style yours with a tailored shirt and a blazer for the office, and a loose knit for the weekends.",
+                    "img_url": ["json/media-cat-one/p4a.jpeg", "json/media-cat-one/p4b.png", "json/media-cat-one/p4c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Bella Pique Pant",
+                    "price": "899",
+                    "description": "Transform the classic tailored silhouette with these box fit pants with mid-rise. The cropped length kick to a slight flare, making them perfect when paired with flats. The soft jersey piquet is ideal for daylong wear. Style with a shimmery tee and the matching tailored blazer.",
+                    "img_url": ["json/media-cat-one/p5a.jpeg", "json/media-cat-one/p5b.png", "json/media-cat-one/p5c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Gerry Boucle Pant",
+                    "price": "899",
+                    "description": "You can count on these pants to make you look your best. The combination of the relaxed fit and mid-rise, the elasticated waist and soft boucle touch, make these pants not only comfy but also chic. Finished with sharp creases at front and back. Complete the look with the matching shirt and leather brogues.",
+                    "img_url": ["json/media-cat-one/p6a.jpeg", "json/media-cat-one/p6b.png", "json/media-cat-one/p6c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Como Night Pant Sustainable",
+                    "price": "899",
+                    "description": "Some pants you’ll want to wear all the time and trust us! These are just the ones. The style is tailored in a flattering culotte fit with high rise, crafted from sustainable cotton-blend and detailed with crisp front pleats. The ankle length makes them look equally great with mules or sneakers. We like it styles with an oversize shirt or a cozy sweater.",
+                    "img_url": ["json/media-cat-one/p7a.jpeg", "json/media-cat-one/p7b.png", "json/media-cat-one/p7c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Como Night Long Pant Sust.",
+                    "price": "999",
+                    "description": "Some pants you’ll want to wear all the time and trust us! These are just the ones. The style is tailored in a flattering culotte fit with high rise, crafted from sustainable cotton-blend and detailed with crisp front pleats. We like it styles with an oversize shirt or a cozy sweater.",
+                    "img_url": ["json/media-cat-one/p8a.jpeg", "json/media-cat-one/p8b.png", "json/media-cat-one/p8c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Drew Night Pant",
+                    "price": "999",
+                    "description": "These tailored pants will look great with just about anything you pair with them. Cut in regular fit with mid-rise and crafted with just the right amount of stretch. The front creases make them looking sharp and sophisticated, especially when paired with the matching blazer and a silk top.",
+                    "img_url": ["json/media-cat-one/p9a.jpeg", "json/media-cat-one/p9b.png", "json/media-cat-one/p9c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Abbey Night Pant Sustainable",
+                    "price": "899",
+                    "description": "A classic pair of tailored pants that never let you down. These are cut in regular fit and mid-rise in pillow soft sustainable fabric, crafted with plenty of stretch for you to wear them all day. A great choice for meetings and easy transitional to evening functions. Style them with the matching blazer to complete the look.",
+                    "img_url": ["json/media-cat-one/p10a.jpeg", "json/media-cat-one/p10b.png", "json/media-cat-one/p10c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Bai Leia Pant",
+                    "price": "799",
+                    "description": "There is nothing better than pants that look stylish and chic but feel soft like sweatpants. The box fit and mid/high-rise is finished with elasticated waist and side pockets. The pressed creases make them look extra sophisticated. Complete the look with the matching blouse for a rich and exclusive look.",
+                    "img_url": ["json/media-cat-one/p11a.jpeg", "json/media-cat-one/p11b.png", "json/media-cat-one/p11c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                },
+                {
+                    "title": "Blake Night Pant Sustainable",
+                    "price": "999",
+                    "description": "The best feeling in the world might just be pants that look smart but have the comfortable feel of sweatpants! These are in tapered fit with low/high-rise, depending on how you wear them. Crafted from sustainable fabric and designed with a wrinkle resistant finish, made to be worn all day. We added a rib at hem, for a chic yet sporty feel. Wear them as a suit with the matching blazer.",
+                    "img_url": ["json/media-cat-one/p12a.jpeg", "json/media-cat-one/p12b.png", "json/media-cat-one/p12c.png"],
+                    "variants": ["32", "34", "36", "38", "40", "42", "44"]
+                }
             ]
         }
 

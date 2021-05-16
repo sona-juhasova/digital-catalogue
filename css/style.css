@@ -27,22 +27,32 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: 50px auto;
 
 }
 
 .text-element h1 {
     font-size: 40px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .text-element h2 {
-    font-size: 25px;
+    font-size: 25px; 
+    max-width: 60%;
     margin-bottom: 20px;
+    text-align: center;
+    margin: auto;
 }
 
-.text-element h3 {
+.text-element p {
     font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 30px;
+
 }
 
 
